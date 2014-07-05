@@ -1,0 +1,22 @@
+{
+  "name": "osm-to-arangoimp",
+  "version": "0.0.0",
+  "description": "descriptive",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "google.com"
+  },
+  "keywords": [
+    "keywords"
+  ],
+  "author": "Hafiz Ismail",
+  "license": "ISC",
+  "dependencies": {
+    "graceful-fs": "^3.0.2",
+    "node-expat": "^2.3.0"
+  }
+}
