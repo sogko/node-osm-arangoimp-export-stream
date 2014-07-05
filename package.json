@@ -3,20 +3,30 @@
   "version": "0.0.0",
   "description": "descriptive",
   "main": "index.js",
+  "bin": {
+    "ghost-export": "bin/cli.js"
+  },
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "google.com"
+    "url": ""
   },
   "keywords": [
     "keywords"
   ],
-  "author": "Hafiz Ismail",
-  "license": "ISC",
+  "author": {
+    "name": "Hafiz Ismail",
+    "email": "hafiz@wehavefaces.net",
+    "url": "http://wehavefaces.net"
+  },
+  "license": "MIT",
   "dependencies": {
-    "graceful-fs": "^3.0.2",
-    "node-expat": "^2.3.0"
+    "node-expat": "^2.3.0",
+    "yargs": "^1.2.6",
+    "progress": "^1.1.7"
+  },
+  "devDependencies": {
   }
 }
