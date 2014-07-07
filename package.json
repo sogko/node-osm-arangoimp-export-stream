@@ -1,10 +1,10 @@
 {
-  "name": "osm-to-arangoimp",
-  "version": "0.0.0",
-  "description": "descriptive",
+  "name": "node-osm-arangoimp-export-stream",
+  "version": "0.0.1",
+  "description": "NodeJS-based streaming OpenStreetMap .osm file export tool to generate file formats understood by ArangoImp for bulk import.",
   "main": "index.js",
   "bin": {
-    "ghost-export": "bin/cli.js"
+    "node-osm-arangoimp-export-stream": "bin/cli.js"
   },
   "scripts": {
     "test": "npm test"
@@ -23,10 +23,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "node-expat": "^2.3.0",
-    "yargs": "^1.2.6",
-    "progress": "^1.1.7"
+    "JSONStream": "^0.8.4",
+    "node-osm-stream": "^0.2.0",
+    "progress": "^1.1.7",
+    "yargs": "^1.2.6"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

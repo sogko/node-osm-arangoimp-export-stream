@@ -1,1 +1,1 @@
-module.exports = require('./lib/osm-arangoimp-export');
+module.exports = require('./lib/node-osm-arangoimp-export-stream');
