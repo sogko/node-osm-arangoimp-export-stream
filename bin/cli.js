@@ -32,6 +32,10 @@ var argv = require('yargs')
   .alias('c', 'check')
   .describe('c', 'Check if output is a valid JSON file if mode=\'json\'')
 
+  .boolean('k')
+  .alias('k', 'keep-cache')
+  .describe('k', 'Keep cache database')
+
   .boolean('h')
   .alias('h', 'help')
   .describe('h', 'Show help')
@@ -44,7 +48,8 @@ if (argv.help){
 
 var options = {
   destination: argv.destination,
-  mode: argv.mode
+  mode: argv.mode,
+  keepCache: argv.k
 };
 
 var exportStream = new OSMArangoImpExportStream(options);
@@ -94,7 +99,7 @@ exportStream.on('end', function () {
       isValidJSON = false;
     });
     jsonParser.on('close', function(){
-      console.log('JSON file check:', (isValidJSON)?'OK' : 'ERROR');
+      console.log('JSON file check:', (isValidJSON)? 'OK' : 'ERROR');
       console.log();
     });
   }
