@@ -18,7 +18,7 @@ var argv = require('yargs')
   .demand('d')
   .alias('d', 'dest')
   .alias('d', 'destination')
-  .describe('d', 'Location of destination exported file')
+  .describe('d', 'Location of destination folder')
 
   .default('m', 'arangoimp')
   .alias('m', 'mode')
